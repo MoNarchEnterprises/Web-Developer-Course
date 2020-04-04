@@ -1,0 +1,35 @@
+<html>
+
+    <head>
+        
+        <title>jQuery</title>
+ 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="CodePROtoTyper.css">
+    </head>
+
+    <body>
+		<div id="topbar">
+			<div id="logo">
+				Code PROtoTyper
+			</div>
+			<div id="buttonContainer">
+				<div class="toggleButton active" id="html">HTML</div>
+				<div class="toggleButton" id="css">CSS</div>
+				<div class="toggleButton" id="js">JavaScript</div>
+				<div class="toggleButton active" id="output">Output</div>		
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div id="bodyContainer">
+			<textarea id="htmlPanel" class="panel"><p>Hi Leonard</p></textarea>
+			<textarea id="cssPanel" class="panel hidden">p{color:green;}</textarea>
+			<textarea id="jsPanel" class="panel hidden">alert("js is working");</textarea>
+			<iframe id="outputPanel" class="panel" 
+					sandbox="allow-modals allow-forms allow-popups allow-scripts 
+					allow-same-origin allow-pointer-lock" 
+					allow="geolocation; midi; camera; microphone; speaker;">Output Area</iframe>
+		</div>
+		<script type="text/javascript" src="codePROtoTyper.js"></script>
+    </body>
+
+</html>
